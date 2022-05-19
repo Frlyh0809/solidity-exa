@@ -105,7 +105,7 @@ contract Ballot{
         // 如果 `proposal` 超过了数组的范围，则会自动抛出异常，并恢复所有的改动
         proposals[proposal].voteCount += sender.weight;
     }
-
+ 
 
     /// @dev 结合之前所有的投票，计算出最终胜出的提案
     function winningProposal() public view
